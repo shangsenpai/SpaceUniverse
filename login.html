@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Assigment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/loogoo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="seang">HOME</a></li>
+                    <li><a href="solar.html" class="seang">SOLAR</a></li>
+                    <li><a href="tech.html" class="seang">TECH</a></li>            
+                    <li><a href="about.html" class="seang">ABOUT</a></li>
+                    <li><a href="contact.html" class="seang">CONTACT</a></li>
+                    <br><br>
+                    <button class="btnLogin-popup">Login</button>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+    <section class="shang">
+        <div class="wrapper">
+            <a href="index.html"><span class="icon-close"><ion-icon name="close-outline"></ion-icon></span></a>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email </label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password </label>
+                    </div>
+                    <div class="remember-fogot">
+                        <label><input type="checkbox">Remember me</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="forget_pww.html">Forgot Password ?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have a account ?&nbsp;&nbsp;&nbsp;<a href="register.html" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+<footer class="footer">
+    <h4 class="tra">About US</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam earum quos, incidunt cumque velit illo neque numquam
+    distinctio ut<br> odit assumenda recusandae cupiditate aspernatur sint eveniet dolorem doloribus corrupti.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <p>Made by Yong EngSeang<br>
+        Room:608, Morning</p>
+
+</footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>

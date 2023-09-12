@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Assigment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/loogoo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="seang">HOME</a></li>
+                    <li><a href="solar.html" class="seang">SOLAR</a></li>
+                    <li><a href="tech.html" class="seang">TECH</a></li>            
+                    <li><a href="about.html" class="seang">ABOUT</a></li>
+                    <li><a href="contact.html" class="seang">CONTACT</a></li>
+                    <br><br>
+                    <a href="login.html"><button class="btnLogin-popup">Login</button></a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!-- Contact us -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0580987429794!2d104.91428440893543!3d11.547690144450486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109511f69ba6309%3A0xc65060947881cb4e!2z4Z6f4Z624Z6A4Z6b4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6b4Z-Q4Z6Z4Z6U4Z-K4Z-C4Z6b4Z6S4Z644Z6i4Z6T4Z-S4Z6P4Z6a4Z6H4Z624Z6P4Z63IOGekeGeuOGfoeKAiyAo4Z6f4Z624Z6B4Z624Z6R4Z694Z6b4Z6f4Z-S4Z6b4Z-C4Z6EKQ!5e0!3m2!1skm!2skh!4v1694244869693!5m2!1skm!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Mavsetong Road, Beltei Building</h5>
+                            <p>Toul Sleng, Beong KengKong , Phnom Penh</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+885 96 322 6205</h5>
+                            <p>Monday to Friday, 8AM to 8PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>shangloveyou@gmail.com</h5>
+                            <p>email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Messages" required></textarea>
+                    <button type="submit" class="hero-btn blue-btn" >Send Messages</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+<!-- footer -->
+<footer class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam earum quos, incidunt cumque velit illo neque numquam
+    distinctio ut<br> odit assumenda recusandae cupiditate aspernatur sint eveniet dolorem doloribus corrupti.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <p>Made by Yong EngSeang ,Room:608 Morning</p>
+
+</footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>

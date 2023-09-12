@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Assigment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/loogoo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="seang">HOME</a></li>
+                    <li><a href="solar.html" class="seang">SOLAR</a></li>
+                    <li><a href="tech.html" class="seang">TECH</a></li>            
+                    <li><a href="about.html" class="seang">ABOUT</a></li>
+                    <li><a href="contact.html" class="seang">CONTACT</a></li>
+                    <br><br>
+                    <a href="login.html"><button class="btnLogin-popup">Login</button></a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- about us content -->
+    <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest universies</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur odio t
+                empore sed ut. Cupiditate mollitia nisi libero laboriosam iste excepturi per
+                ferendis eligendi ad officia, aliquam repellendus deserunt nam vitae sunt!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur odio t
+                empore sed ut. Cupiditate mollitia nisi libero laboriosam iste excepturi per
+                ferendis eligendi ad officia, aliquam repellendus deserunt nam vitae sunt!
+            </p>
+            <br><br><br><br><br><br>
+            <h1>About ME</h1>
+            <p>
+                Name   : Yong EngSeang<br>
+                ID     : A054438<br>
+                Batch  : V <br>
+                Room   : 608 <br>
+                Shift  : Morning (weekdays)<br>
+                Campus : I<br>
+                Locate : Toul Sleng, Beong KengKong, PhomPenh<br>
+                Contct : +885 96 322 6205<br>
+                Email  : engseang425@gamil.com<br>
+            </p>
+            <a href="" class="hero-btn blue-btn">See more about us</a>
+        </div>
+        <div class="about-col">
+            <img src="image/about2.jfif">
+            <img src="image/mengseang.jpg">
+        </div>
+    </div>
+    </section>
+
+
+<!-- footer -->
+<footer class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quam earum quos, incidunt cumque velit illo neque numquam
+    distinctio ut<br> odit assumenda recusandae cupiditate aspernatur sint eveniet dolorem doloribus corrupti.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <p>Made by Yong EngSeang<br>
+        Room:608, Morning</p>
+
+</footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
